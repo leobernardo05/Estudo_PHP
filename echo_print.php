@@ -6,9 +6,10 @@
     <title>Estudo PHP</title>
 </head>
 <body>
-    <!-- implementação do php na tag html -->
-    <?php //padrão utilizado no PHP 7+
-        echo 'utilizando a tag padrão'; // ; é padrão do PHP
-    ?>
+    <?php
+        echo 'Comando echo <br>'; // ou aspas simples ou duplas
+        //pode adicionar o html em comandos php
+        print 'Comando print'; 
+    ?> 
 </body>
 </html>
