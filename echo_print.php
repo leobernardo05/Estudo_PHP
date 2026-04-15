@@ -6,6 +6,7 @@
     <title>Estudo PHP</title>
 </head>
 <body>
+    <!-- js + node; js + php; js + .net  -> tudo isso é presente no desenvolvolvimento web fullstack -->
     <?php
         echo 'Comando echo <br>'; // ou aspas simples ou duplas
         //pode adicionar o html em comandos php
