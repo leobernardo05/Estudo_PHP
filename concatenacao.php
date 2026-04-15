@@ -9,7 +9,7 @@
     <?php
         $nome = 'Léo';
         $idade = '19';
-        $hobbie = 'nadar';
+        $hobbie = 'futebol';
         // operador .
        echo 'Olá ' . $nome . ', você tem ' . $idade . ' anos e gosta de ' . $hobbie . '.';
     
