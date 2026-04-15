@@ -7,7 +7,14 @@
 </head>
 <body>
     <?php
-       
+       $nota = 10; //lembra do ';'
+
+        // <> operador diferente no PHP, unica diferença do JS.   
+       if ($nota <= 7 && $nota >= 0) {
+            echo 'Aluno reprovado';
+       } else {
+            echo 'Aluno aprovado';
+       }
     ?> 
 </body>
 </html>
