@@ -7,7 +7,15 @@
 </head>
 <body>
     <?php
-       
+       define('BD_URL', 'endereco_bd_dev');
+       define('BD_USUARIO', 'usuario_bd_dev');
+       define('BD_SENHA', 'senha_bd_dev');
+
+       // .. lógica ..//    
+
+       echo BD_URL . '<br>'; // não precisa do $
+       echo BD_USUARIO . '<br>';
+       echo BD_SENHA . '<br>';
     ?> 
 </body>
 </html>
