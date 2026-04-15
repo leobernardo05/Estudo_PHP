@@ -7,7 +7,8 @@
 </head>
 <body>
     <?php
-        
+        // deve obrigatoriamente iniciar com caracter "$"
+        // ex: $idade, $nome, $endereco_2
     ?> 
 </body>
 </html>
