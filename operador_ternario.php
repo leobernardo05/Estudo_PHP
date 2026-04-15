@@ -9,7 +9,7 @@
     <?php
        $nota = 10; //lembra do ';'
 
-       $nota <= 10 ? 'Reprovado' : 'aprovado';
+       echo ($nota <= 10) ? 'Reprovado' : 'aprovado';
     ?> 
 </body>
 </html>
