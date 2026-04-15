@@ -16,6 +16,16 @@
        } else {
             echo 'Aluno aprovado';
        }
+
+        //operadores logico
+        // E: && ou AND
+        // OU: || ou OR
+        // XOR: XOR -> retonra verdadeiro se uma das expressões for verdadeira retorna false
+        if(7 >= 4 XOR 10< 15) {
+            echo 'Verdadeiro';
+        } else {
+            echo 'Falso';
+        }
     ?> 
 </body>
 </html>
