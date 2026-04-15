@@ -9,6 +9,19 @@
     <?php
         // deve obrigatoriamente iniciar com caracter "$"
         // ex: $idade, $nome, $endereco_2
+
+        // string
+        $nome = 'José'; //obrigatoriamente usar "$"
+        print_r($nome)
+
+        // int 
+        $idade = 29;
+
+        // float
+        $peso = 29.5; // --> ';' não se deve esquecer 
+
+        // boolean -- muito utilizada em teste lógicos
+        $fumante_sn = true; //true or false
     ?> 
 </body>
 </html>
