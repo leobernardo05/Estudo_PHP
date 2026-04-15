@@ -9,8 +9,13 @@
     <!-- js + node; js + php; js + .net  -> tudo isso é presente no desenvolvolvimento web fullstack -->
     <?php
         echo 'Comando echo <br>'; // ou aspas simples ou duplas
-        //pode adicionar o html em comandos php
+        //pode adicionar o html em comandos php --> comentario de uma linha
         print 'Comando print'; 
+        #comentario de uma linha
+        /*comentario
+        de
+        multiplas
+        linhas*/
     ?> 
 </body>
 </html>
