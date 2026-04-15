@@ -10,6 +10,7 @@
        $nota = 10; //lembra do ';'
 
         // <> operador diferente no PHP, unica diferença do JS.   
+        // operador XOR --> Verdadeiro apenas se uma das expressões forem verdadeiras, mas não ambas 
        if ($nota <= 7 && $nota >= 0) {
             echo 'Aluno reprovado';
        } else {
