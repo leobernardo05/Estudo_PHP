@@ -21,7 +21,14 @@
         $peso = 29.5; // --> ';' não se deve esquecer 
 
         // boolean -- muito utilizada em teste lógicos
-        $fumante_sn = true; //true or false
+        $fumante_sn = true; //true or false ou (true = 1) ou (false = vazio)
+
+        // ... lógica ...//
+        $idade = 30;
+
+        $peso = 32.6;
+
+        $fumante_sn = false
     ?> 
 </body>
 </html>
