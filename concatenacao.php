@@ -12,6 +12,10 @@
         $hobbie = 'nadar';
         // operador .
        echo 'Olá ' . $nome . ', você tem ' . $idade . ' anos e gosta de ' . $hobbie . '.';
+    
+       echo'<br>';
+        // aspas duplas
+       echo "Olá $nome, você tem $idade anos e gosta de $hobbie"; // "" server como `` no js --> bem melhor!!!   
     ?> 
 </body>
 </html>
