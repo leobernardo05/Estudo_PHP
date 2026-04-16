@@ -9,7 +9,7 @@
     <?php
         $opcao = 2;
 
-        switch(opcao) {
+        switch($opcao) {
             case 1: 
                 echo 'opcao 1';
                 break;
@@ -19,7 +19,7 @@
             case 3: 
                 echo 'opcao 3';
                 break;
-            default:
+            default: //opcional
                 echo 'coloque uma opcao valida';
                 break;
         }
