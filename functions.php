@@ -7,7 +7,21 @@
 </head>
 <body>
     <?php
-        
+        //função de boas vindas 
+        function exibirBoasVindas() {
+            echo 'Seja bem vindo ao curso de PHP <br>';
+        }
+        exibirBoasVindas();
+
+
+        // função calcular terreno
+        function calcularAreaTerreno($largura, $altura) {
+            $area = $largura * $altura;
+            return $area;
+        }
+        $resultado = calcularAreaTerreno(10,20);
+        echo "A area é: $resultado"
+
     ?> 
 </body>
 </html>
