@@ -7,7 +7,11 @@
 </head>
 <body>
     <?php
-       
+        //incremento pre e pos
+        $a = 7;
+
+        echo "O contido em a é $a <br>";
+        echo "O contido em a é '. $a++ .' <br>"; //precisa concatenar para o interpetador não assumir como uma string
     ?> 
 </body>
 </html>
