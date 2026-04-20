@@ -15,18 +15,28 @@
         print_r($lista_frutas);
         echo '</pre>';
 
-        //$existe = in_array('Abacate', $lista_frutas);
+        $existe = in_array('Abacate', $lista_frutas);
         // true -> texto = 1
         // false -> texto = vazio
         echo array_search('Uva', $lista_frutas);
         // null
         
-        /*
-            if($existe){ //true / false
-                echo 'Sim, o valor pesquisado existe no array';
-            } else {
-                echo 'Não, o valor pesquisado existe no array';
-        }*/
+        
+        if($existe != null){ //true / false
+            echo 'Sim, o valor pesquisado existe no array';
+        } else {
+            echo 'Não, o valor pesquisado existe no array';
+        }
+        $lista_coisas = [
+            'frutas' => $lista_frutas,
+            'pessoas' => ['João', 'Maria']
+        ];
+
+        echo '<pre>';
+        print_r($lista_frutas);
+        echo '</pre>';
+
+        echo in_array('Melancia', $lista_coisas['frutas']);
     ?> 
 </body>
 </html>
