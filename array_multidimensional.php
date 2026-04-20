@@ -16,6 +16,11 @@
         echo '<pre>';
         print_r($lista_coisas);
         echo '<pre>';
+
+        echo '<hr>';
+        echo $lista_coisas['frutas'][3];
+        echo '<br>';
+        echo $lista_coisas['pessoas'][2];
     ?> 
 </body>
 </html>
