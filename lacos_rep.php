@@ -27,6 +27,21 @@
         for($j = 0; $j < count($array); $j++){
             echo $array[$j] . "<br>";
         }
+
+        // forech -- laço de repetição
+        $itens = array('sofa', 'mesa', 'cadeira', 'fogao', 'geladeira');
+        echo '<pre>';
+            print_r($itens);
+        echo '</pre>';
+
+        foreach($itens as $item) {
+            echo "$item <br/>";
+
+            if($item == 'mesa') {
+                echo '(Compre uma mesa e ganhe 25% de desconto em uma geladeira)';
+            }
+        }
+
     ?> 
 </body>
 </html>
