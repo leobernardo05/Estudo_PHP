@@ -9,7 +9,7 @@
     <?php
       $funcionarios = array(
         array('nome' => 'João', 'salario' => 2500), 
-        array('nome' => 'Maria', 'salrio' => 3000), 
+        array('nome' => 'Maria', 'salario' => 3000), 
         array('nome' => 'Júlia', 'salario' => 4500)
       );
 
@@ -18,7 +18,11 @@
       echo '</pre>';
 
       foreach($funcionarios as $idx => $nome_funcionario) {
-        echo $nome_funcionario . '<br>';
+        
+        foreach($nome_funcionario as $idx2 => $valor) {
+            echo "$idx2 - $valor <br />";
+        }
+        echo '<hr>';
       }
     ?> 
 </body>
