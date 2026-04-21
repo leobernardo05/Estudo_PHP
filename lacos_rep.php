@@ -10,7 +10,7 @@
        $array = ['1','2','3','4','3','2', '1'];
         $i = 0;
         //while = enquanto
-        while ( $i <= count($array) ) {
+        while ( $i < count($array) ) {
             echo $array[$i] . "<br>";
             $i++;
         }
@@ -21,10 +21,10 @@
         do {
             echo $array[$i] . "<br>";
             $i++;
-        } while ( $i <= $array.count())
+        } while ( $i < count($array));
 
         // laço for -> mais usado
-        for($j = 0; $j <= $array.count(); j++){
+        for($j = 0; $j < count($array); $j++){
             echo $array[$j] . "<br>";
         }
     ?> 
