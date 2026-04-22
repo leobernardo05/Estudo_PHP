@@ -58,11 +58,3 @@ O repositório está organizado por arquivos separados de acordo com o conteúdo
 - Criação de funções personalizadas
 - Manipulação de datas, strings e números
 
-
-
-1. Instale um servidor local como:
-   - XAMPP
-   - WAMP
-   - Laragon
-
-2. Coloque a pasta do projeto dentro do diretório:
