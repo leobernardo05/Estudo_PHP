@@ -11,13 +11,15 @@
             return "$this->nome possui $this->numFilhos filho(s)";
         }
 
-        function modificarNumFilhos () {
+        function modificarNumFilhos ($numFilhos) {
             // afetar o atributo do objeto
+            $this->numFilhos = $numFilhos;
         }
     }
 
     $funcionario = new Funcionario();
-    $funcionario-> resumirCadFunc();
-
-    $funcionario->modificarNumFilhos();
+    echo $funcionario-> resumirCadFunc();
+    echo '<br>';
+    echo $funcionario->modificarNumFilhos(3);
+    echo $funcionario-> resumirCadFunc();
 ?>
