@@ -15,12 +15,12 @@
             $this->numFilhos = $numFilhos;
         }
 
-        function getNome($nome) {
-            return $this->nome //get ler = função void, retorna algo
+        function getNome() {
+            return $this->nome; //get ler = função void, retorna algo e não recebe parametro
         }
 
-        function getNumFilhos($numFilhos) {
-            return $this->numFilhos
+        function getNumFilhos() {
+            return $this->numFilhos;
         }
 
         // métodos
@@ -34,9 +34,9 @@
         }
     }
 
-    $funcionario = new Funcionario();
-    echo $funcionario-> resumirCadFunc();
-    echo '<br>';
-    echo $funcionario->modificarNumFilhos(3);
-    echo $funcionario-> resumirCadFunc();
+    $y = new Funcionario();
+    $y->setNome('José');
+    $y->setNumFilhos (2);
+    // echo $y-> resumirCadFunc();
+    echo $y->getNome() . ' possui ' . $y->getNumFilhos() . 'filhos(s)'
 ?>
