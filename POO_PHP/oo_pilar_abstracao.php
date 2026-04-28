@@ -6,6 +6,23 @@
         public $telefone = 8799999999;
         public $numFilhos = 2;
 
+        // getters setters
+        function setNome($nome) {
+            $this->nome = $nome; //set apenas manipula
+        }
+
+        function setNumFilhos($numFilhos) {
+            $this->numFilhos = $numFilhos;
+        }
+
+        function getNome($nome) {
+            return $this->nome //get ler = função void, retorna algo
+        }
+
+        function getNumFilhos($numFilhos) {
+            return $this->numFilhos
+        }
+
         // métodos
         function resumirCadFunc() {
             return "$this->nome possui $this->numFilhos filho(s)";
