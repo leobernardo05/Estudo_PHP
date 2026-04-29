@@ -10,6 +10,10 @@
         function frear() {
             echo 'freando';
         }
+
+        function trocarMarcha(){
+            echo 'Desengatar embreagem com o pé e engatar marcha'
+        }
     }
 
     class Carro extends Veiculo { //pilar da herança aqui
