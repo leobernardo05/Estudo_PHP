@@ -34,23 +34,23 @@
 
         function getNumFilhos() {
             return $this->numFilhos;
-        }
+        }*/
 
         // métodos
         function resumirCadFunc() {
-            return "$this->nome possui $this->numFilhos filho(s)";
+            return $this->__get('nome') . ' possui ' . $this->__get('numFilhos') . ' filho(s) '; //inserindo valores atraves de getters!
         }
 
         function modificarNumFilhos ($numFilhos) {
             // afetar o atributo do objeto
             $this->numFilhos = $numFilhos;
-        }*/
+        }
     }
 
     $y = new Funcionario();
     $y->__set('nome', 'Zacarias');
     $y->__set('numFilhos', 5);
     // $y->setNumFilhos (2);
-    // echo $y-> resumirCadFunc();
-    echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filhos(s)'
+    echo $y-> resumirCadFunc();
+    // echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filhos(s)'
 ?>
