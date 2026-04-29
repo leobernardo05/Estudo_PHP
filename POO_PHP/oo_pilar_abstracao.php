@@ -52,5 +52,5 @@
     $y->__set('numFilhos', 5);
     // $y->setNumFilhos (2);
     // echo $y-> resumirCadFunc();
-    echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . 'filhos(s)'
+    echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filhos(s)'
 ?>
