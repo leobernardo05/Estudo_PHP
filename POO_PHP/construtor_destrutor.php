@@ -27,6 +27,6 @@
    echo $pessoa->correr();
 
    echo '<br>';
-   unset($pessoa); //chama o destruct
+   unset($pessoa); //chama o destruct -> de forma proposital
 
 ?>
