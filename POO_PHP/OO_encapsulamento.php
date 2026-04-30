@@ -57,8 +57,10 @@
     echo '<pre>';
         print_r($filho);
     echo '</ pre>';
-    echo $filho->getAtributo('sobrenome');
-    $filho->setAtributo('humor', 'Triste');
-    echo '</ br>';
-    echo $filho->getAtributo('humor');
+    echo $filho->getAtributo('nome');
+
+    // exibir os métodos do objeto
+    echo '<pre>';
+    print_r(get_class_methods($filho));
+    echo '</ pre>';
 ?>
