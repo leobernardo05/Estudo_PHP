@@ -44,9 +44,18 @@
         function empinar(){
             echo 'empinar';
         }
+
+         function trocarMarcha(){
+            echo 'Desengatar embreagem com a mão e engatar marcha com o pé'
+        }
+    }
+
+    class Caminhao extends Veiculo {
+
     }
 
     $carro = new Carro('ABC1234', 'Branco');
     $moto = new Moto('ABC1E22', 'Preta');
+    $caminhao = new Caminhao();
 
 ?>
