@@ -63,4 +63,9 @@
     echo '<pre>';
     print_r(get_class_methods($filho));
     echo '</ pre>';
+
+    echo $filho->__get('nome');
+    $filho->__set('nome', 'Léo');
+    echo '<br>';
+    echo $filho->__get('nome')
 ?>
