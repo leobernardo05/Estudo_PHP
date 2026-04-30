@@ -4,22 +4,21 @@
         protected $sobrenome = 'Silva';
         public $humor = 'Feliz';
 
-        public function getNome(){
-            return $this->nome;
+        public function __get($attr) {
+            return $this->$attr;
         }
 
-        public function setNome($value){
-            $this->nome = $value;
+        public function __set($attr, $value){
+            $this->$attr = $value;
         }
     }
 
 
     $pai = new Pai();
-    echo $pai->getNome();
-    $pai->setNome('Leo');
-    echo '<br>';
-    echo $pai
-
+    // echo $pai->humor;
+    echo $pai->sobrenome;
+    echo $pai->sobrenome = 'Oliveira';
+    echo '<br>'
     /*$pai->humor = 'Triste';
     echo '<br>';
     echo $pai->humor;*/
