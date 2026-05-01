@@ -54,36 +54,40 @@
     // interface cachorro
     class Cachorro implements TerrestreInterface, MamiferoInterface {
         public function andar(){
-            echo 'andando'
+            echo 'andando';
         }    
 
         public function respirar(){
-            echo 'respirando'
+            echo 'respirando';
         }
     }
 
     // interface baleia
     class Baleia implements AquaticoInterface, MamiferoInterface {
         public function respirar(){
-            echo 'respirando'
+            echo 'respirando';
         }
 
         public function nadar(){
-            echo 'nadando'
+            echo 'nadando';
+        }
+
+        protected function esguichar (){
+            echo 'esguichar';
         }
     }
     // interface ornitorrinco que faz tudo, ou seja, implementa as 3 interfaces
     class Ornitorrinco implements TerrestreInterface, AquaticoInterface, MamiferoInterface {
         public function respirar(){
-            echo 'respirando'
+            echo 'respirando';
         }
 
         public function andar(){
-            echo 'andando'
+            echo 'andando';
         }
 
         public function nadar(){
-            echo 'nadando'
+            echo 'nadando';
         }
     }
 ?>
