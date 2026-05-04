@@ -1,7 +1,52 @@
 <?php
 
-    class Cliente {
-        public 
+    namespace A;
+    class Cliente{
+        public $nome = 'Jorge';
+
+        public function __construct(){
+            echo '<pre>';
+                print_r(get_class_methods($this));
+            echo '</pre>';
+        }
+
+        public function __get($attr){
+            return $this->$attr;
+        }
+
+        public function salvar(){
+            echo 'salvar';
+        }
+    
     }
+
+    interface CadastroInterface {
+        public function salvar(); 
+    }
+
+    namespace B;
+
+    class Cliente implements CadastroInterface{
+        public $nome = 'Santana';
+        public function __get($attr){
+            return $this->$attr;
+        }
+
+        public function salvar(){
+            echo 'Salvando';
+        }
+
+    }
+
+    interface CadastroInterface {
+        public function salvar();
+    }
+
+
+    // --------------------
+
+    $c = new \A\Cliente(); //identifica o namespacce
+    print_r($c);
+    echo $c->__get('nome');
 
 ?>
