@@ -21,6 +21,6 @@
         default => 'Não encontrou'
     }; // -> muito legal essa nova atualização do PHP 8+
 
-    echo "Resultado match: ".$retorno
+    echo "Resultado match: ".$retorno;
 
 ?>
