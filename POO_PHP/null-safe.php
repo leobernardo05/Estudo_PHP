@@ -7,6 +7,18 @@
         $objeto->total();
     }*/
 
+    class Funcionario {
+        public function __construct(
+            private string $nome = "";
+            private float $salario = 0
+        ){}
+
+        public function info() {
+            return "Nome: $this->nome - Salario: $this->salario";
+        }
+
+    }
+
     //$objeto?->total();
     class FolhaPagamento {
         public function getTotalFuncionarios(){
