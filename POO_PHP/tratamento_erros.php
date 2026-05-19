@@ -1,7 +1,7 @@
 <?php
     // tenha uma lógica
     try { //tente
-        // tenha um lógic onde possa ocrrer um potencial erro(exceção)
+        // tenha um lógica onde possa ocrrer um potencial erro(exceção)
         echo '<h3> *** Try *** </h3>';
         $sql = 'Select * from clientes';
         mysql_query($sql); //Erro
