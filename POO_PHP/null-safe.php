@@ -21,14 +21,30 @@
 
     //$objeto?->total();
     class FolhaPagamento {
+        private $funcionarios = null;
+
+        public function __construct() {
+            $this->funcionarios = [
+                new Funcionarios('Maria', 12000),
+                new Funcionarios('José', 12000),
+                new Funcionarios('João', 12000),
+                new Funcionarios(''Zerafim, 12000),
+                new Funcionarios('Robson', 12000),
+            ]
+        }
+    
         public function getTotalFuncionarios(){
-            return 25;
+            return count($this->funcionarios);
+        }
+
+        public function getTotalFuncionarios () {
+            return $this->funcionarios[1]; //vai retornar a Maria 
         }
     }
 
     $folhaPagamento = new FolhaPagamento();
 
-    echo $folhaPagamento?->getTotalFuncionario(); //adiciona o null safe (?)
+    echo $folhaPagamento?->getTotalFuncionario(); //adiciona o null safe (?) --> para ter certeza que é um objeto (meio como um operador ternario)
 
 
 ?>
